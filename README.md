@@ -6,11 +6,18 @@ The selection and preparation of the [KvasirCapsule-Seg] and [Kvasir-SEG] datase
 
 Throughout the project, a complex task was solved, covering the entire cycle: from analyzing modern solutions in the field of machine vision to creating a practical web service available for testing in a clinical setting. The work was based on the use of convolutional neural network (CNN) architectures, in particular the U-Net model, modified for the MobileNetV2-UNet, AutoKeras-ResNet, Ensemble_model task. These architectures have proven to be effective tools for semantic segmentation tasks in medical imaging due to their ability to accurately identify even small anatomical structures.
 
+![изображение](https://github.com/user-attachments/assets/77ac4578-3a89-4bd2-860a-969883c900ef)
+
+
 The construction, modification and training of the U-Net, MobileNetV2-UNet, AutoKeras-ResNet, Ensemble_model models made it possible to compare the effectiveness of the classical architecture and its modified variants. Using MobileNetV2 as an encoder has significantly improved the results, especially with limited data. Dice and IoU metrics were used in the training process, providing an objective assessment of the quality of segmentation. The obtained metric values confirm the high sensitivity and accuracy of the model, especially in the case of MobileNetV2-UNet.
 
 The development of the REST API using Flask ensured the practical integration of the model into the work environment. The system takes images, performs segmentation, and returns the result to the user in the form of a photo of a polyp with a outlined outline. This format is ideal for further visualization in medical systems. Thanks to the use of the OpenCV library, efficient image preprocessing has been performed, as well as scaling of input data.
 
 Integration with the ngrok service made it possible to create a public URL where the model becomes available to external users. This simplified the demonstration of the project and made it possible for doctors and researchers to conduct remote testing without having to host a server on the network. This approach is of particular importance in terms of prototyping and clinical testing of models based on real data.
+
+![изображение](https://github.com/user-attachments/assets/c3f91e0a-f601-47d2-b0e0-bb39dfe7f65c)
+
+
 Key achievements of the project:
 
 • Implemented a polyp segmentation model capable of working in real time;
